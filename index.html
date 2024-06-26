@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website landing page</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Navigation -->
+      <nav class="upper">
+            <a href="index.html">Home</a>
+            <a href="index.html">Features</a>
+            <a href="index.html">Testimonials</a>
+            <a href="index.html">Contacts</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transform Your Workflow with Our Innovative Tool</h1>
+            <p>Streamline your tasks and boost productivity with our cutting-edge software.</p>
+            <a href="#cta" class="btn cta-button">Start Free Trial</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="text-center">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <p>Simplify your workflow and reduce stress.</p>
+            <p>Increase productivity and achieve more in less time.</p>
+            <p>Stay ahead of the curve with our innovative technology</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+                <div class="col-md-3">
+                    <i class="icon-task"></i>
+                    <h4>Task Management</h4>
+                </div>
+                <div class="col-md-3">
+                    <i class="icon-cloud"></i>
+                    <h4>Real-time collaboration</h4>
+                </div>
+                <div class="col-md-3">
+                    <i class="icon-analytics"></i>
+                    <h4>Advanced Analytics</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section id="testimonials" class="py-5 text-center">
+        <div class="container">
+            <h2>Trusted by Thousands</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="Rose.jpg" alt="Client 1" class="img-fluid"> 
+                    <blockquote>This tool has been a revelation to me.
+                         It has saved me so much time and effort, and has completely transformed the
+                        way i approach my work. - Rose K.</blockquote>   
+                </div>
+                <div class="col-md-6">
+                    <img src="carol.jpg" alt="Client 2" class="img-fluid">
+                    <blockquote>"It is amazing how much more efficient i am now, thanks to this tool.
+                         It hass saved me time, reduced stress, and improved my overall work 
+                         experience - Joan C..</blockquote>
+                </div>
+            </div>
+            <p>Join over 10,000 satisfied users.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2>Get Started Today</h2>
+            <p>Sign up for a free 14-day trial and see the difference.</p>
+            <button class="btn cta-button" onclick="showForm()">Start Free Trial</button>
+        </div>
+    </section>
+
+    <!-- Sign-Up Form Section -->
+    <section id="signup-form" class="py-5 text-center">
+        <div class="container">
+            <h2>Sign Up for Free Trial</h2>
+            <form onsubmit="validateForm(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <button type="submit" class="btn cta-button">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
